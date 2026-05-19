@@ -1,101 +1,198 @@
-Nova Bracket – AI-Based Bracket Placement Detection
-Overview
+# 🦷 Nova Bracket — AI-Based Dental Bracket Placement Detection
 
-Nova Bracket is an AI-powered dental bracket placement detection system developed using Computer Vision and YOLO object detection models. The project was designed to assist orthodontic analysis by detecting and identifying dental bracket positions from dental images in real time.
+<div align="center">
 
-The complete workflow involved:
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge\&logo=python)
+![YOLO](https://img.shields.io/badge/YOLO-v11%20%7C%20v26-red?style=for-the-badge)
+![Roboflow](https://img.shields.io/badge/Roboflow-Dataset%20Workflow-orange?style=for-the-badge)
+![Android](https://img.shields.io/badge/Android-Studio-green?style=for-the-badge\&logo=android)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-AI-purple?style=for-the-badge)
 
-Dataset collection and annotation
-Dataset preprocessing using Roboflow
-YOLO model training on Google Colab
-Real-time Android application integration
-Technologies Used
-Python
-YOLOv11 / YOLOv26
-Roboflow
-LabelImg
-Google Colab
-Android Studio
-Firebase (optional integration)
-Computer Vision
-Dataset Preparation
-Image Collection
-Collected approximately 8000 dental images for training and testing.
-Images included multiple dental angles, lighting conditions, and patient cases.
+</div>
+
+---
+
+# 📌 Overview
+
+Nova Bracket is an AI-powered dental bracket placement detection system developed using **YOLO-based Computer Vision models**.
+The project focuses on assisting orthodontic analysis by detecting dental bracket positions from dental images with real-time prediction capabilities.
+
+The complete pipeline includes:
+
+* Manual dataset annotation
+* Dataset preprocessing & augmentation
+* YOLO model training on Google Colab
+* Android Studio integration for real-time detection
+
+---
+
+# 🚀 Features
+
+✅ AI-based dental bracket detection
+✅ Real-time object detection workflow
+✅ Android application integration
+✅ Custom annotated dataset
+✅ Roboflow-powered preprocessing pipeline
+✅ Practical clinical testing on real patients
+
+---
+
+# 🛠️ Tech Stack
+
+| Category             | Technologies                |
+| -------------------- | --------------------------- |
+| Programming Language | Python                      |
+| AI Models            | YOLOv11, YOLOv26            |
+| Dataset Workflow     | Roboflow                    |
+| Annotation Tools     | Roboflow Labeller, LabelImg |
+| Training Environment | Google Colab                |
+| Mobile Integration   | Android Studio              |
+| Domain               | Computer Vision, AI         |
+
+---
+
+# 📂 Dataset Preparation
+
+## 📸 Image Collection
+
+* Collected and processed approximately **8000 dental images**
+* Included multiple dental conditions, patient cases, and lighting environments
+
+---
+
+## 🏷️ Annotation Process
+
+Images were manually labelled using:
+
+* **Roboflow Labeller**
+* **LabelImg**
+
+Bounding boxes were created around dental brackets for supervised object detection training.
+
+---
+
+## 🔄 Dataset Processing with Roboflow
+
+Roboflow was used for:
+
+* Dataset version management
+* Image preprocessing
+* Dataset organization
+* Data augmentation
+
+### Applied Augmentations
+
+* Rotation
+* Brightness adjustment
+* Scaling
+* Flipping
+
+This significantly improved model generalization during real-world testing.
+
+---
+
+# 🧠 Model Training
+
+## ⚡ Training Environment
+
+Training was performed using **Google Colab GPU instances**.
+
+---
+
+## 🤖 Models Used
+
+* YOLOv11
+* YOLOv26
+
+---
+
+## 📈 Training Workflow
+
+```text
+Dental Images
+      ↓
 Image Annotation
-
-The dataset was manually labelled using:
-
-Roboflow Labeller
-LabelImg
-
-Each dental bracket was annotated with bounding boxes for object detection training.
-
-Dataset Processing
-
-Using Roboflow:
-
-Images were resized and normalized
-Dataset versions were managed
-Data augmentation techniques were applied:
-Rotation
-Brightness adjustment
-Flipping
-Scaling
-
-This helped improve model generalization and real-world performance.
-
-Model Training
-Training Environment
-Model training was performed using Google Colab with GPU acceleration.
-YOLO Models Used
-YOLOv11
-YOLOv26
-Training Workflow
-Exported processed dataset from Roboflow in YOLO format
-Uploaded dataset to Google Colab
-Configured YOLO training environment
-Trained detection models using Python
-Evaluated model performance using validation metrics
-Performance
-Dataset Size: ~8000 images
-Real-world Accuracy: ~85%
-Successfully tested across multiple dental image conditions
+      ↓
+Roboflow Dataset Processing
+      ↓
+YOLO Dataset Export
+      ↓
+Google Colab Training
+      ↓
+Model Evaluation
+      ↓
 Android Integration
-Android Studio Deployment
+```
 
-The trained YOLO detection model was integrated into an Android application prototype using Android Studio.
+---
 
-Features
-Real-time bracket detection
-Camera-based image input
-Detection visualization using bounding boxes
-Mobile-friendly inference workflow
+# 📊 Model Performance
 
-The Android application was developed to assist practical orthodontic analysis and testing.
+| Metric              | Result                   |
+| ------------------- | ------------------------ |
+| Dataset Size        | ~8000 Images             |
+| Model Accuracy      | ~85% Real-World Accuracy |
+| Framework           | YOLOv11 / YOLOv26        |
+| Testing Environment | Clinical Dental Cases    |
 
-Real-World Testing
-The system has been tested and utilized by a dental student on approximately 50–60 patients.
-Practical testing helped evaluate detection consistency under real clinical conditions.
-Research Work
+---
 
-The project is currently under process for:
+# 📱 Android Integration
 
-Research paper publication
-Further model optimization
-Expanded clinical testing
-Future Improvements
-Improve detection accuracy using larger datasets
-Add multi-class dental analysis
-Optimize mobile inference speed
-Deploy cloud-based prediction APIs
-Expand Android application features
-Project Workflow Summary
-Collect Dental Images
-Annotate Images using Roboflow & LabelImg
-Process & Augment Dataset in Roboflow
-Export YOLO Dataset
-Train YOLO Models in Google Colab
-Evaluate Accuracy & Performance
-Integrate Trained Model into Android Studio
-Perform Real-World Clinical Testing
+The trained YOLO model was integrated into an Android application prototype using **Android Studio**.
+
+## Features
+
+* Real-time bracket detection
+* Camera-based image input
+* Bounding box visualization
+* Mobile inference workflow
+
+The Android application was designed for practical orthodontic assistance and testing.
+
+---
+
+# 🏥 Real-World Usage
+
+The project has been:
+
+* Tested and utilized by a dental student
+* Used across approximately **50–60 patient cases**
+* Evaluated under practical clinical conditions
+
+---
+
+# 📄 Research Work
+
+📌 The project is currently under process for:
+
+* Research paper publication
+* Further model optimization
+* Expanded clinical validation
+
+---
+
+# 🔮 Future Improvements
+
+* Increase dataset size for improved accuracy
+* Add multi-class dental analysis
+* Improve mobile inference speed
+* Cloud-based prediction APIs
+* Advanced orthodontic analytics
+
+---
+
+# 👨‍💻 Author
+
+## Shobhit Gohel
+
+AI | Android | Computer Vision | Data Analytics
+
+* LinkedIn
+* GitHub
+
+---
+
+# ⭐ Project Status
+
+🚧 Active Development & Research Phase
