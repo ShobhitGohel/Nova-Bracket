@@ -1,0 +1,7 @@
+brace correct
+brace incorrect
+canine
+central incisor
+first premolar
+lateral incisor
+second premolar

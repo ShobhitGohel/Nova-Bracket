@@ -1,0 +1,7 @@
+<resources>
+    <!-- Base theme — NoActionBar so activities control their own UI fully -->
+    <style name="Base.Theme.NovaBracket2" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+
+    <style name="Theme.NovaBracket2" parent="Base.Theme.NovaBracket2" />
+</resources>

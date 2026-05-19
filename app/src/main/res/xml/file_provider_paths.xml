@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- external cache dir: used when external storage is available -->
+    <external-cache-path name="camera_captures_external" path="." />
+    <!-- internal cache dir: fallback when external storage is unavailable -->
+    <cache-path name="camera_captures_internal" path="." />
+</paths>
